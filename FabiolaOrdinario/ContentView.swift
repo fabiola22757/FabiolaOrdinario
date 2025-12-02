@@ -27,10 +27,7 @@ struct ContentView: View {
                         ForEach(vm.characters, id: \.id) { character in
                             
                             NavigationLink{
-                                CharacterDetailView(vm: vm)
-                                    .onAppear {
-                                        vm.personajesSeleccionado = character
-                                    }
+                                CharacterDetailView(vm: vm, character: character)
                             } label: {
                                 HStack(spacing: 16){
                                     Spacer()

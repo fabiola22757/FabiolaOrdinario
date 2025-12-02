@@ -12,7 +12,7 @@ class SlayerViewModel: ObservableObject {
     
     @Published var characters: [Character] = []
     @Published var isLoading: Bool = false
-    @Published var personajesSeleccionado: Character?
+    //@Published var personajesSeleccionado: Character?
     
     func getCharacters() {
         let endPoint = "https://www.demonslayer-api.com/api/v1/characters?limit=150"
